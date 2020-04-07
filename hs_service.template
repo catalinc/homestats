@@ -1,0 +1,12 @@
+[Unit]
+Description=Collect weather data
+Requires=influxdb.service
+
+[Service]
+ExecStart=COMMAND
+User=USER
+Restart=on-failure
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
