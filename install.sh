@@ -3,9 +3,7 @@
 set -x
 set -e
 
-cat hs_service.template | sed -e "s|USER|$(whoami)|g; s|COMMAND|$(pwd)/hs_serial.py|g" > hs_serial.service
-cat hs_service.template | sed -e "s|USER|$(whoami)|g; s|COMMAND|$(pwd)/hs_web.py|g" > hs_web.service
+cat service.template | sed -e "s|USER|$(whoami)|g; s|COMMAND|$(pwd)/homestats.py|g" > homestats.service
 
-sudo mv hs_*.service /etc/systemd/system/
-sudo systemctl enable hs_serial.service
-sudo systemctl enable hs_web.service
+sudo mv homestats.service /etc/systemd/system/
+sudo systemctl enable homestats.service
