@@ -144,3 +144,6 @@ cython_debug/
 
 # VS Code
 .vscode/
+
+# Config file for development
+homestats.dev

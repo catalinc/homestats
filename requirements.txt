@@ -1,8 +1,11 @@
 Adafruit-Blinka==6.10.0
 adafruit-circuitpython-busdevice==5.0.6
+adafruit-circuitpython-ltr390==1.1.1
+adafruit-circuitpython-register==1.9.5
 adafruit-circuitpython-sgp30==2.3.5
 Adafruit-PlatformDetect==3.13.3
 Adafruit-PureIO==1.1.8
+Cap1xxx==0.1.3
 certifi==2021.5.30
 chardet==4.0.0
 idna==2.10
@@ -18,8 +21,10 @@ requests==2.25.1
 rpi-ws281x==4.3.0
 RPi.GPIO==0.7.0
 six==1.16.0
+smbus==1.1.post2
 smbus2==0.4.1
 sparkfun-qwiic-bme280==0.9.0
 sparkfun-qwiic-i2c==0.9.11
+sparkfun-qwiic-serlcd==0.0.1
 sysv-ipc==1.1.0
 urllib3==1.26.5

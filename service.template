@@ -1,10 +1,11 @@
 [Unit]
-Description=Collect weather data
+Description=Collect ambient data
 Requires=influxdb.service
 
 [Service]
 ExecStart=COMMAND
 User=USER
+WorkingDirectory=WORKDIR
 Restart=on-failure
 RestartSec=10s
 
