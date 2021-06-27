@@ -21,7 +21,7 @@ All sensors are connected using the [Qwiic Connect System](https://www.sparkfun.
 1. Install InfluxDB and Grafana. I recommend [Installing InfluxDB & Grafana on Raspberry Pi](https://simonhearne.com/2020/pi-influx-grafana/) guide.
 2. Clone this repo.
 3. Install Python packages required for sensors: `sudo pip3 install -r requirements.txt`. 
-3. Edit `homestats.ini`  and set InfluxDB access credentials for Grafana user. Beware that the password is stored in plain text, so ensure that this file is readable only by `pi` user.
+3. Edit `homestats.ini`  and set InfluxDB access credentials for Grafana user. Beware that the password is stored in plain text, so is probably better ensure that this file is readable only by the service user (usually the `pi` user).
 4. Install the `homestats` service: `sudo ./install_service.sh` script. 
 5. Start the service: `sudo systemctl start homestats.service`.
 6. Open Grafana and import `homestats_dashboard.json` dashboard to visualise sensor data.
