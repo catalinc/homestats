@@ -126,13 +126,13 @@ if __name__ == "__main__":
             bg_color = get_lcd_background_color(eco2)
             lcd.setFastBacklight(*bg_color)
             lcd.setCursor(0, 0)
-            lcd.print(f"T:{temperature_celsius}C RH:{humidity}%")
+            lcd.print(f"T:{temperature_celsius} C RH:{humidity} %")
             lcd.setCursor(0, 1)
-            lcd.print(f"P:{pressure_hpa}hPa")
+            lcd.print(f"P:{pressure_hpa} hPa ")
             lcd.setCursor(0, 2)
-            lcd.print(f"CO2:{eco2}ppm L:{light}lx")
+            lcd.print(f"CO2:{eco2} ppm L:{light} lx")
             lcd.setCursor(0, 3)
-            lcd.print(f"TVOC:{tvoc}ppb UV:{uv}")
+            lcd.print(f"TVOC:{tvoc} ppb UV:{uv}")
 
             time.sleep(stats_interval)
     except KeyboardInterrupt:
