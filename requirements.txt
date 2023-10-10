@@ -26,4 +26,4 @@ sparkfun-qwiic-bme280==0.9.0
 sparkfun-qwiic-i2c==0.9.11
 sparkfun-qwiic-serlcd==0.0.1
 sysv-ipc==1.1.0
-urllib3==1.26.5
+urllib3==1.26.17
